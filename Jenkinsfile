@@ -16,11 +16,5 @@ pipeline {
               sh 'mvn clean test'
           }
       }
-      stage("package"){
-          steps{
-              echo 'package maven app'
-              sh 'mvn package -DskipTests'
-          }
-      }
   }
 }
